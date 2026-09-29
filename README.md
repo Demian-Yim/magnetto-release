@@ -16,9 +16,9 @@ Windows와 Mac에서 쓸 수 있습니다.
 
 | 내 컴퓨터 | 받을 파일 |
 |---|---|
-| **Windows** (10·11) | [`Magnetto-Setup-0.2.0-win-x64.exe`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-Setup-0.2.0-win-x64.exe) |
-| **Mac** — Apple 칩 (M1·M2·M3·M4) | [`Magnetto-0.2.0-mac-arm64.dmg`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-0.2.0-mac-arm64.dmg) |
-| **Mac** — Intel 칩 | [`Magnetto-0.2.0-mac-x64.dmg`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-0.2.0-mac-x64.dmg) |
+| **Windows** (10·11) | [`Magnetto-Setup-0.2.1-win-x64.exe`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.1/Magnetto-Setup-0.2.1-win-x64.exe) |
+| **Mac** — Apple 칩 (M1·M2·M3·M4) | [`Magnetto-0.2.1-mac-arm64.dmg`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.1/Magnetto-0.2.1-mac-arm64.dmg) |
+| **Mac** — Intel 칩 | [`Magnetto-0.2.1-mac-x64.dmg`](https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.1/Magnetto-0.2.1-mac-x64.dmg) |
 
 **내 Mac이 어떤 칩인지 확인하는 법:** 화면 왼쪽 위 사과(🍎) 메뉴 → **이 Mac에 관하여**
 → **칩** 항목에 "Apple M…"이 보이면 Apple 칩, **프로세서** 항목에 "Intel"이 보이면 Intel입니다.
@@ -160,8 +160,8 @@ xattr -dr com.apple.quarantine /Applications/Magnetto.app
 
 [Releases](https://github.com/Demian-Yim/magnetto-release/releases/latest) 페이지의 `SHA256SUMS.txt`에 각 파일의 고유 번호(해시)가 있습니다. 받은 파일의 번호와 같으면 중간에 바뀌지 않은 원본입니다.
 
-- **Windows** (PowerShell): `Get-FileHash .\Magnetto-Setup-0.2.0-win-x64.exe`
-- **Mac** (터미널): `shasum -a 256 ~/Downloads/Magnetto-0.2.0-mac-arm64.dmg`
+- **Windows** (PowerShell): `Get-FileHash .\Magnetto-Setup-0.2.1-win-x64.exe`
+- **Mac** (터미널): `shasum -a 256 ~/Downloads/Magnetto-0.2.1-mac-arm64.dmg`
 
 ---
 
