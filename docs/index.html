@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnetto 설치 안내</title>
+<meta name="description" content="공개된 웹 영상을 내 PC에 저장하는 무료 프로그램 Magnetto — Windows·Mac 설치 방법과 사용법을 실제 화면으로 안내합니다.">
+<meta property="og:title" content="Magnetto 설치 안내">
+<meta property="og:description" content="공개된 웹 영상을 내 PC에 저장하는 무료 프로그램. Windows·Mac 설치 방법을 실제 화면으로 안내합니다.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://demian-yim.github.io/magnetto-release/img/app-main.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{
+    --ink:#1A1A1A; --body:#3A3A3A; --muted:#6B7280;
+    --navy:#1B3A6B; --navy-soft:#EDF1F8; --line:#E5E7EB;
+    --signal:#C2410C; --bg:#FFFFFF; --card:#F8FAFC;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--body);
+    font-family:Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-size:17px; line-height:1.75; letter-spacing:-.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 16px}
+  a{color:var(--navy)}
+  h1,h2,h3{color:var(--ink); line-height:1.3; letter-spacing:-.02em}
+  h2{font-size:1.6rem; margin:0 0 .2em; padding-top:.2em}
+  h3{font-size:1.12rem; margin:2rem 0 .6rem}
+  section{padding:56px 0; border-top:1px solid var(--line)}
+  .eyebrow{font-size:.78rem; font-weight:700; letter-spacing:.14em; color:var(--navy); text-transform:uppercase; margin:0 0 .5rem}
+  .lead{color:var(--muted); margin:.4em 0 0}
+
+  header{padding:64px 0 8px; text-align:center}
+  header h1{font-size:2.6rem; margin:.1em 0 .2em}
+  header .sub{font-size:1.1rem; color:var(--body); margin:0 auto; max-width:34em}
+  .badge{display:inline-block; background:var(--navy-soft); color:var(--navy); font-weight:600;
+         font-size:.82rem; padding:5px 13px; border-radius:999px; margin-bottom:14px}
+
+  .dl{display:grid; gap:12px; grid-template-columns:repeat(3,1fr); margin:30px 0 10px}
+  .dl a{display:block; text-decoration:none; background:var(--navy); color:#fff; border-radius:12px;
+        padding:16px 14px; text-align:center; font-weight:700; transition:opacity .15s}
+  .dl a:hover{opacity:.88}
+  .dl a span{display:block; font-weight:500; font-size:.8rem; opacity:.85; margin-top:3px}
+  .dl a.alt{background:#fff; color:var(--navy); border:2px solid var(--navy)}
+  .dl-note{text-align:center; font-size:.9rem; color:var(--muted); margin:8px 0 0}
+
+  figure{margin:20px 0 28px}
+  figure img{width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:12px;
+             box-shadow:0 2px 14px rgba(15,23,42,.07)}
+  figure img.shot-sm{max-width:600px}
+  figure img.shot-xs{max-width:330px}
+  figcaption{font-size:.88rem; color:var(--muted); margin-top:9px}
+
+  ol.steps{counter-reset:s; list-style:none; padding:0; margin:18px 0}
+  ol.steps>li{counter-increment:s; position:relative; padding-left:44px; margin-bottom:18px}
+  ol.steps>li::before{content:counter(s); position:absolute; left:0; top:1px; width:29px; height:29px;
+    background:var(--navy); color:#fff; border-radius:50%; font-size:.9rem; font-weight:700;
+    display:flex; align-items:center; justify-content:center}
+  ol.steps strong{color:var(--ink)}
+
+  table{width:100%; border-collapse:collapse; margin:18px 0; font-size:.96rem}
+  th,td{border:1px solid var(--line); padding:11px 13px; text-align:left; vertical-align:top}
+  th{background:var(--card); color:var(--ink); font-weight:700}
+  code{background:var(--card); border:1px solid var(--line); border-radius:5px; padding:1px 6px;
+       font-family:ui-monospace,"SF Mono",Consolas,monospace; font-size:.9em; word-break:break-all}
+  pre{background:#0F172A; color:#E2E8F0; padding:14px 16px; border-radius:10px; overflow-x:auto}
+  pre code{background:none; border:0; color:inherit; padding:0}
+
+  .note{background:var(--card); border-left:4px solid var(--navy); border-radius:0 10px 10px 0;
+        padding:14px 18px; margin:20px 0; font-size:.95rem}
+  .note.warn{border-left-color:var(--signal)}
+  .note p{margin:.4em 0}
+  .note b{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line); padding:34px 0 60px; text-align:center;
+         font-size:.9rem; color:var(--muted)}
+  footer b{color:var(--ink)}
+
+  @media (max-width:640px){
+    body{font-size:16px}
+    header{padding:44px 0 4px}
+    header h1{font-size:2rem}
+    section{padding:42px 0}
+    .dl{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">무료 · Windows · Mac · v0.2.0</div>
+    <h1>🧲 Magnetto 설치 안내</h1>
+    <p class="sub">인스타그램·유튜브·페이스북 등 <b>공개된 웹 영상을 내 PC에 저장</b>하는 프로그램입니다.
+       아래 순서대로 따라 하시면 됩니다.</p>
+
+    <div class="dl">
+      <a href="https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-Setup-0.2.0-win-x64.exe">Windows<span>10 · 11 (159MB)</span></a>
+      <a class="alt" href="https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-0.2.0-mac-arm64.dmg">Mac — Apple 칩<span>M1 · M2 · M3 · M4 (190MB)</span></a>
+      <a class="alt" href="https://github.com/Demian-Yim/magnetto-release/releases/download/v0.2.0/Magnetto-0.2.0-mac-x64.dmg">Mac — Intel 칩<span>2020년 이전 (208MB)</span></a>
+    </div>
+    <p class="dl-note">내 Mac의 칩을 모르시면 🍎 메뉴 → <b>이 Mac에 관하여</b> →
+      <b>칩</b>에 "Apple M…"이면 Apple 칩, <b>프로세서</b>에 "Intel"이면 Intel입니다.<br>
+      <a href="https://github.com/Demian-Yim/magnetto-release/releases/latest">모든 파일 보기 (Releases)</a></p>
+
+    <figure>
+      <img src="img/app-main.png" alt="Magnetto 첫 화면 — 왼쪽에 다운로드·라이브러리·설정 메뉴, 가운데에 URL 입력칸이 있다">
+      <figcaption>설치를 마치면 보이는 첫 화면입니다.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<section id="win">
+  <div class="wrap">
+    <p class="eyebrow">Windows</p>
+    <h2>Windows에 설치하기</h2>
+    <p class="lead">받은 파일을 더블클릭하고, 아래 화면들을 지나면 끝납니다.</p>
+
+    <ol class="steps">
+      <li><strong>파란 경고창이 뜨면</strong> — "Windows의 PC 보호"라는 창이 뜹니다.
+        창 안의 <b>추가 정보</b>를 누르면 아래에 <b>실행</b> 버튼이 생깁니다. 그 버튼을 누르세요.
+        <div class="note warn">
+          <p><b>왜 경고가 뜨나요?</b> 이 프로그램에는 해마다 비용을 내야 하는 <b>"제작자 인증서"(코드서명)가 붙어 있지 않습니다.</b>
+             바이러스라서가 아니라, 인증서가 없는 프로그램에 Windows가 자동으로 붙이는 안내입니다.
+             개인이 무료로 배포하는 프로그램에서 흔히 보입니다.</p>
+          <p>미덥지 않으시면 아래 <a href="#verify">받은 파일이 진짜인지 확인하기</a>로 직접 검증하실 수 있습니다.</p>
+        </div>
+      </li>
+      <li><strong>사용 안내 및 고지</strong> 화면을 읽고 <b>동의함</b>을 누릅니다.
+        <figure><img class="shot-sm" src="img/win-1-license.png" alt="Magnetto 설치 마법사의 사용권 계약 화면. 제작자와 저작권 안내가 적혀 있고 아래에 동의함 버튼이 있다"></figure>
+      </li>
+      <li><strong>설치 위치</strong>는 그대로 두고 <b>설치</b>를 누릅니다.
+        <figure><img class="shot-sm" src="img/win-2-folder.png" alt="설치 위치 선택 화면. 설치 폴더가 사용자 폴더 아래로 지정되어 있다"></figure>
+      </li>
+      <li><strong>잠시 기다립니다.</strong> 파일이 큰 편이라 1~2분쯤 걸립니다. 끝나면 <b>마침</b>을 누르세요.
+        <figure><img class="shot-sm" src="img/win-3-installing.png" alt="설치 중 진행 막대가 표시된 화면"></figure>
+      </li>
+      <li>바탕화면의 <strong>Magnetto</strong> 아이콘으로 실행합니다.</li>
+    </ol>
+
+    <p><b>지우고 싶을 때:</b> Windows <b>설정 → 앱 → 설치된 앱 → Magnetto → 제거</b></p>
+  </div>
+</section>
+
+<section id="mac">
+  <div class="wrap">
+    <p class="eyebrow">Mac</p>
+    <h2>Mac에 설치하기</h2>
+    <p class="lead">처음 한 번만 "그래도 열기"를 눌러 주시면, 다음부터는 바로 열립니다.</p>
+
+    <ol class="steps">
+      <li>받은 <code>.dmg</code> 파일을 더블클릭해 엽니다.</li>
+      <li>열린 창에서 <strong>Magnetto 아이콘을 Applications(응용 프로그램) 폴더로 끌어다 놓습니다.</strong></li>
+      <li><strong>응용 프로그램</strong> 폴더에서 Magnetto를 더블클릭합니다.</li>
+      <li>"Apple은 'Magnetto'에 … 악성 코드가 없음을 확인할 수 없습니다" 같은 창이 뜨면 <b>완료</b>를 누릅니다.</li>
+      <li>🍎 메뉴 → <strong>시스템 설정</strong> → 왼쪽 <strong>개인정보 보호 및 보안</strong> → 오른쪽을 아래로 내리면
+        <b>"'Magnetto'이(가) 차단되었습니다"</b> 옆에 <b>그래도 열기</b> 버튼이 있습니다. 누릅니다.</li>
+      <li>Mac 암호를 입력하고, 다시 뜨는 창에서 <b>그래도 열기</b>를 누르면 실행됩니다.</li>
+    </ol>
+
+    <div class="note">
+      <p><b>그래도 열리지 않으면 (마지막 방법)</b> — <b>응용 프로그램 → 유틸리티 → 터미널</b>을 열고
+         아래 한 줄을 붙여 넣은 뒤 Enter를 누르세요.</p>
+    </div>
+    <pre><code>xattr -dr com.apple.quarantine /Applications/Magnetto.app</code></pre>
+
+    <div class="note">
+      <p>이 문서의 Mac 화면 사진은 아직 없습니다. 화면 문구는 macOS 버전마다 조금씩 다릅니다.
+         위 순서는 Apple 칩·Intel 칩 두 설치본을 자동 검증한 결과를 바탕으로 적었습니다.</p>
+    </div>
+
+    <p><b>지우고 싶을 때:</b> 응용 프로그램 폴더의 Magnetto를 휴지통으로 옮기면 됩니다.</p>
+  </div>
+</section>
+
+<section id="use">
+  <div class="wrap">
+    <p class="eyebrow">사용법</p>
+    <h2>쓰는 법은 세 단계입니다</h2>
+
+    <h3>① 주소를 붙여 넣습니다</h3>
+    <p>영상 주소(URL)를 입력칸에 붙여 넣습니다. 여러 개를 한 번에 받으려면 <b>한 줄에 하나씩</b> 넣으세요.
+       몇 개가 인식됐는지 버튼에 숫자로 표시됩니다.</p>
+    <figure>
+      <img src="img/use-1-paste.png" alt="입력칸에 유튜브 주소와 영상 파일 주소 두 줄이 붙여 넣어져 있고, 버튼에 다운로드 시작 괄호 2로 표시된다">
+      <figcaption>URL 2개를 넣으니 "인식된 URL 2개"로 바뀝니다.</figcaption>
+    </figure>
+
+    <h3>② 다운로드 시작을 누릅니다</h3>
+    <p>제목·채널·길이·미리보기 그림을 찾아온 뒤, 화질을 자동으로 가장 좋은 것으로 골라 받습니다.
+       진행률과 남은 시간이 실시간으로 보입니다.</p>
+    <figure>
+      <img src="img/use-2-progress.png" alt="진행 중 목록에 영상 제목과 미리보기 그림, 진행률과 남은 시간이 표시된다">
+      <figcaption>실제로 받는 중인 화면입니다. 여러 개는 동시에 처리됩니다.</figcaption>
+    </figure>
+
+    <h3>③ 끝나면 폴더를 엽니다</h3>
+    <p>완료 목록의 <b>폴더 버튼</b>을 누르면 저장된 폴더가 바로 열립니다.</p>
+    <figure>
+      <img src="img/use-3-done.png" alt="완료 목록에 두 건이 완료 표시와 함께 나열되어 있다">
+      <figcaption>받은 파일은 사이트별 폴더(Youtube · Instagram …)로 자동 분류됩니다.</figcaption>
+    </figure>
+
+    <h3>지금까지 받은 것 모아 보기</h3>
+    <figure>
+      <img src="img/library.png" alt="라이브러리 화면에 완료된 다운로드 목록이 표시된다">
+      <figcaption><b>라이브러리</b> 메뉴에서 지난 기록을 다시 열어볼 수 있습니다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="instagram">
+  <div class="wrap">
+    <p class="eyebrow">Instagram</p>
+    <h2>인스타그램에서 "로그인이 필요합니다"라고 나올 때</h2>
+    <p class="lead">인스타그램은 연령·지역 제한이 있거나 일부에게만 공개된 게시물을 로그인 없이는 내주지 않습니다.</p>
+
+    <ol class="steps">
+      <li><strong>설정 → 로그인 쿠키</strong>로 내려가 <b>인스타그램 로그인</b> 버튼을 누릅니다.
+        <figure><img src="img/ig-1-settings.png" alt="설정 화면의 로그인 쿠키 항목. 인스타그램 로그인 버튼과 아직 로그인하지 않았다는 안내가 보인다"></figure>
+      </li>
+      <li><strong>앱 안에서 인스타그램 로그인 창이 열립니다.</strong> 평소처럼 로그인하면 끝입니다.
+        브라우저 확장 프로그램을 따로 설치할 필요가 없습니다.
+        <figure><img class="shot-xs" src="img/ig-2-login.png" alt="앱 안에서 열린 인스타그램 로그인 창"></figure>
+      </li>
+    </ol>
+
+    <div class="note">
+      <p><b>로그인 정보는 이 컴퓨터 안에만 암호화되어 저장됩니다.</b>
+         Windows·Mac이 제공하는 운영체제 수준 암호화를 써서 보관하며, 어디로도 전송되지 않습니다.</p>
+      <p>여러 사람이 함께 쓰는 컴퓨터라면, 다 쓰신 뒤 같은 화면에서 <b>로그아웃</b>을 눌러 주세요.</p>
+    </div>
+  </div>
+</section>
+
+<section id="settings">
+  <div class="wrap">
+    <p class="eyebrow">설정</p>
+    <h2>바꿀 수 있는 것들</h2>
+    <p>저장 폴더, 화질, 파일 형식, 동시에 받는 개수, 폴더 정리 방식을 설정 화면에서 바꿀 수 있습니다.
+       다운로드 엔진(yt-dlp)은 앱을 켤 때 자동으로 최신으로 맞춰지고, 필요하면 직접 눌러 갱신할 수도 있습니다.</p>
+    <figure>
+      <img src="img/settings.png" alt="설정 화면. 다운로드 엔진 버전, 저장 폴더, 품질, 컨테이너, 동시 다운로드 수 항목이 있다">
+    </figure>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap">
+    <p class="eyebrow">주의</p>
+    <h2>꼭 지켜 주세요</h2>
+    <table>
+      <tr><th style="width:26%">⚖️ 저작권</th>
+          <td>받은 영상의 저작권은 원래 게시자에게 있습니다. <b>개인 보관 · 학습 인용 · 내가 올린 영상 되찾기</b>에만 쓰세요.
+              다시 올리거나 상업적으로 쓰면 안 됩니다.</td></tr>
+      <tr><th>📵 인스타 계정 보호</th>
+          <td>짧은 시간에 너무 많이 받으면 인스타그램이 자동 수집으로 보고 <b>로그인한 내 계정을 제한</b>할 수 있습니다.
+              <b>설정 → 동시 다운로드 수는 1~2개</b>를 권합니다.</td></tr>
+      <tr><th>🔒 보증 없음</th>
+          <td>사이트 정책이 바뀌면 일부 영상이 받아지지 않을 수 있습니다. 무료로 제공하는 프로그램이며 보증하지 않습니다.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>자주 묻는 문제</h2>
+    <table>
+      <tr><th style="width:38%">증상</th><th>해결</th></tr>
+      <tr><td>"다운로드 엔진을 찾지 못했습니다"</td>
+          <td>백신이 엔진 파일을 격리했을 수 있습니다. 백신의 격리 목록에서 Magnetto 관련 파일을 복원하고 다시 설치해 주세요.</td></tr>
+      <tr><td>인스타그램 "로그인이 필요합니다"</td>
+          <td>위 <a href="#instagram">인스타그램 로그인</a>을 진행하세요. 이미 하셨다면 <b>다시 로그인</b>을 누르세요.</td></tr>
+      <tr><td>"요청 속도를 제한했습니다"</td>
+          <td>설정에서 동시 다운로드 수를 1로 낮추고 몇 분 뒤 다시 시도하세요.</td></tr>
+      <tr><td>예전에 되던 사이트가 갑자기 안 됨</td>
+          <td>Magnetto를 껐다 켜면 다운로드 엔진이 자동으로 최신 버전으로 바뀝니다.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="verify">
+  <div class="wrap">
+    <p class="eyebrow">선택</p>
+    <h2>받은 파일이 진짜인지 확인하기</h2>
+    <p><a href="https://github.com/Demian-Yim/magnetto-release/releases/latest">Releases</a> 페이지의
+       <code>SHA256SUMS.txt</code>에 각 파일의 고유 번호(해시)가 있습니다.
+       아래 명령으로 나온 번호가 그 파일의 번호와 같으면, 중간에 바뀌지 않은 원본입니다.</p>
+    <p><b>Windows</b> — PowerShell</p>
+    <pre><code>Get-FileHash .\Magnetto-Setup-0.2.0-win-x64.exe</code></pre>
+    <p><b>Mac</b> — 터미널</p>
+    <pre><code>shasum -a 256 ~/Downloads/Magnetto-0.2.0-mac-arm64.dmg</code></pre>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Magnetto는 오픈소스 <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>(Unlicense)와
+       <a href="https://ffmpeg.org">FFmpeg</a>(LGPL/GPL)를 사용합니다.
+       라이선스 전문은 설치 폴더의 <code>LICENSE-NOTICE.txt</code>에 있습니다.</p>
+    <p><b>Demin Yim · FLOW : AX디자인연구소</b> ·
+       <a href="mailto:rescuemyself@gmail.com">rescuemyself@gmail.com</a> · © 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
