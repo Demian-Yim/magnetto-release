@@ -1,14 +1,14 @@
 # 🧲 Magnetto 설치 안내
 
+![주소를 붙여넣고 버튼 하나로 받은 결과 — 완료 목록에 유튜브 영상과 일반 영상이 나란히 저장돼 있다](https://github.com/Demian-Yim/magnetto-release/raw/main/docs/img/use-3-done.png)
+
 인스타그램·유튜브·페이스북 등 **공개된 웹 영상을 내 PC에 저장**하는 무료 프로그램입니다.
 Windows와 Mac에서 쓸 수 있습니다.
 
 ### 📖 [그림으로 보는 설치 안내 (웹 페이지)](https://demian-yim.github.io/magnetto-release/)
 ### ⬇️ [최신 버전 내려받기 (Releases)](https://github.com/Demian-Yim/magnetto-release/releases/latest)
 
-> 제작: **Demin Yim · FLOW : AX디자인연구소** · rescuemyself@gmail.com
-
-![Magnetto 첫 화면](docs/img/app-main.png)
+> 제작: **Demian Yim · FLOW : AX디자인연구소** · rescuemyself@gmail.com
 
 ---
 
@@ -79,6 +79,10 @@ xattr -dr com.apple.quarantine /Applications/Magnetto.app
 ---
 
 ## 4. 사용법 (3단계)
+
+설치를 마치고 실행하면 이 화면이 뜹니다.
+
+![Magnetto 첫 화면](docs/img/app-main.png)
 
 ### ① 주소를 붙여 넣습니다
 
@@ -166,4 +170,4 @@ Magnetto는 오픈소스 [yt-dlp](https://github.com/yt-dlp/yt-dlp)(Unlicense)�
 
 > 이 저장소에는 **설치파일과 안내문만** 있습니다. 문의: rescuemyself@gmail.com
 
-**Demin Yim · FLOW : AX디자인연구소** · rescuemyself@gmail.com · © 2026
+**Demian Yim · FLOW : AX디자인연구소** · rescuemyself@gmail.com · © 2026
